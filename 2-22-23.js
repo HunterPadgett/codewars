@@ -17,7 +17,7 @@ function firstNonRepeatingLetter(s) {
  else if (s.length < 1) return "";
 }
 
-// console.log(firstNonRepeatingLetter("sTresS"));
+console.log(firstNonRepeatingLetter("sTresS"));
 
 // turn string into lowercase
 // loop, start at 0, go the strings length
