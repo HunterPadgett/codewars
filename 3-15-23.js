@@ -29,4 +29,27 @@ function isIsogram(str) {
  return true;
 }
 
-console.log(isIsogram("Dermatoglyphics"));
+// console.log(isIsogram("Dermatoglyphics"));
+
+function shopify(items, cart) {
+ const filterItems = items.filter((item) => !cart.includes(item[0]));
+
+ if (filterItems > 1) {
+  const sortedItems = filterItems.sort((a, b) => b[1] - a[1]);
+  return sortedItems[0][0];
+ } else {
+  return filterItems[0][0];
+ }
+}
+
+console.log(
+ shopify(
+  [
+   ["pencil", 3],
+   ["marker", 2],
+   ["chalkboard", 30],
+   ["paper", 20],
+  ],
+  ["pencil", "marker"]
+ )
+);
