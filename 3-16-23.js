@@ -22,6 +22,28 @@ function DNAStrand(dna) {
 // "ATTGC" --> "TAACG"
 // "GTAT" --> "CATA"
 
-// return the complementary str of dna 
+// return the complementary str of dna
 
 // use conditionals to check if letter is x have a temp str += y
+
+function sum(...args) {
+ return args.reduce((acc, num) => acc + num);
+}
+
+// console.log(sum(1, 2, 3, 4, 5, 6, 7));
+
+function getNames(arr) {
+ const names = arr.filter((obj) => obj.userName).map((obj) => obj.userName);
+ console.log(names);
+}
+
+console.log(
+ getNames([
+  { a: 1 },
+  { userName: "Jane" },
+  {},
+  { userName: "Don" },
+  { userName: "Bob" },
+  { b: 2 },
+ ])
+);
