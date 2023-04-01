@@ -7,17 +7,32 @@
 // 999 --> 4 (because 9*9*9 = 729, 7*2*9 = 126, 1*2*6 = 12, and finally 1*2 = 2)
 // 4 --> 0 (because 4 is already a one-digit number)
 
-function persistence(num) {
- let count = 0;
+// function persistence(num) {
+//  let count = 0;
 
- while (num > 9) {
-  num = String(num)
-   .split("")
-   .reduce((acc, num) => acc * num, 1);
-   count++
- }
+//  while (num > 9) {
+//   num = String(num)
+//    .split("")
+//    .reduce((acc, num) => acc * num, 1);
+//    count++
+//  }
 
- return count;
+//  return count;
+// }
+
+// persistence(39);
+
+function sumObjectValues(obj) {
+ const values = Object.values(obj);
+ console.log(values);
+ return values.reduce((acc, num) => acc + num, 0);
 }
 
-persistence(39);
+console.log(
+ sumObjectValues({
+  coke: 10,
+  pepsi: 5,
+  drPepper: 7,
+  sprite: 9,
+ })
+);
