@@ -29,8 +29,8 @@ reverseSeq(5);
 function openOrSenior(data) {
  return data.map(([age, handicap]) =>
   age >= 55 && handicap > 7 ? "Senior" : "Open"
- );
-}
+  );
+ }
 
 console.log(
  openOrSenior([
@@ -39,6 +39,11 @@ console.log(
   [61, 12],
   [37, 6],
   [21, 21],
+  [21, 21],
+  [21, 21],
+  [21, 21],
+  [21, 21],
+
   [78, 9],
  ])
 );
