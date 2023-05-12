@@ -14,3 +14,5 @@ function minValue(values) {
   const set = new Set(values);
   return Number([...set].sort((a, b) => a - b).join(""));
 }
+
+// get rid of dupes by turning the array into a set, then back into an array, sorting it, then joining it back into a number
